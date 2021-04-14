@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+
+.db{
+    width: 100%;
+    height: 490px;
+    display:flex;
+    justify-content: space-around;
+}
+.comd{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 300px;
+    height: 334px;
+    width:210px;
+    padding: 12px;
+    box-shadow: 0px 0px 19px teal,
+    0px 5px 19px teal,
+    5px 10px 19px teal,
+    10px 15px 19px teal;
+    background: rgb(110,209,181);
+background: linear-gradient(140deg, #008080 50%, rgba(0,0,0,1) 50%);
+}
+.comd:hover{
+    background: rgb(110,209,181);
+background: linear-gradient(140deg, rgba(0,0,0,1) 50% , #008080 50%);
+}
+
+#db1,#db2,#db3{
+    overflow: hidden;
+    margin-bottom: 70px;
+    animation: mje 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes mje {
+    0%{
+        text-shadow: 0px 0px 19px black,
+    0px 5px 19px black,
+    5px 10px 19px black,
+    10px 15px 19px black;
+    background-color: black;
+    }
+    25%{text-shadow: 0px 0px 19px rosybrown,
+        0px 5px 19px rosybrown,
+        5px 10px 19px rosybrown,
+        10px 15px 19px rosybrown;}
+    75%{
+        text-shadow: 0px 0px 19px seagreen,
+    0px 5px 19px seagreen,
+    5px 10px 19px seagreen,
+    10px 15px 19px seagreen;
+    }
+    100%{
+        text-shadow: 0px 0px 19px cadetblue,
+    0px 5px 19px cadetblue,
+    5px 10px 19px cadetblue,
+    10px 15px 19px cadetblue;
+    }
+}
+.pag{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.word{
+    animation-name: word;
+    animation-duration: 2s;
+    transition-property: all;
+    animation-iteration-count: infinite;
+}
+@keyframes word 
+{
+    from{transform: skewx(10deg);
+        transform: skewY(-20deg);}
+    to{transform: skewx(10deg);
+        transform: skewY(-20deg);}
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: white;
+}
+#btn1{
+    border: cadetblue 2px solid;
+    padding: 12px 12px 12px 12px;
+    text-decoration: none;
+    color: teal;
+    box-shadow: 0px 0px 19px teal,
+    0px 5px 19px teal,
+    5px 10px 19px teal,
+    10px 15px 19px #008080;
+}
+#btn1:active{
+    color: white;
+}
